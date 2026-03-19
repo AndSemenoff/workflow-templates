@@ -15,7 +15,7 @@ jobs:
       # Step: Check out the repository
       # This step uses the actions/checkout action to clone the repository
       - name: Check out repository
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@master
@@ -26,7 +26,7 @@ jobs:
       # Step: Cache Cargo dependencies
       # Caches the Cargo registry and build artifacts between runs.
       - name: Cache Cargo dependencies
-        uses: Swatinem/rust-cache@779680da715d629ac1d338a641029a2f4372abb5 # v2.8.2
+        uses: Swatinem/rust-cache@c19371144df3bb44fab255c43d04cbc2ab54d1c4 # v2.9.1
 
       # Step: Run Clippy
       # This step runs Clippy with specific flags to ensure code quality.
